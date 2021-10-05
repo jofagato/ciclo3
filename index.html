@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+	
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script1.js"></script>
+	<script type="text/javascript" src="script2.js"></script>
+</head>
+<body>
+
+	<h1>RESERVA FINCAS  - RETO 2</h1>
+
+    <h2>CLIENTES</h2>
+	<input type="number" id="miId" placeholder="Id">
+	<input type="text" id="name" placeholder="name">
+	<input type="text" id="email" placeholder="email">
+	<input type="number" id="age" placeholder="age">
+
+
+	<button onclick="registroCliente()">RegistrarCliente</button>
+
+	<button onclick="obtenerItems()">ListarClientes</button>
+	
+	<button onclick="actualizar()">ActualizarCliente</button>
+
+
+    <div>
+
+		<table cellspacing="10" cellpadding="10" border="3">
+			<tbody id="miResultado">
+
+			</tbody>
+		</table>
+		
+	</div>
+
+    <h2>FINCAS</h2>
+	<input type="number" id="miId1" placeholder="Id">
+	<input type="text" id="address" placeholder="Direccion">
+	<input type="number" id="exension" placeholder="exension">
+	<input type="number" id="category_id" placeholder="categoy_id">
+	<input type="text" id="namefarm" placeholder="name">
+
+	<button onclick="registroFinca()">Registrar</button>
+
+	<button onclick="obtenerItemsFinca()">ListarFincas</button>
+	
+	<button onclick="actualizarFinca()">ActualizarFinca</button>
+	<div>
+
+		<table cellspacing="10" cellpadding="10" border="3">  
+			<tbody id="miResultadofinca">
+
+			</tbody>
+		</table>
+		
+	</div>
+	
+
+	<h2>MENSAJES</h2>
+	<input type="number" id="miId2" placeholder="Id">
+	<input type="text" id="messagetext" placeholder="Mensaje">
+	
+
+	<button onclick="registrarMensaje()">RegistrarMensaje</button>
+
+	<button onclick="obtenerItemsMensaje()">ListarMensajes</button>
+	
+	<button onclick="actualizarMensaje()">ActualizarMensaje</button>
+	<div>
+
+		<table cellspacing="10" cellpadding="10" border="3">
+			<tbody id="miResultadoMensajes">
+
+			</tbody>
+		</table>
+		
+	</div>
+
+</body>
+</html>
